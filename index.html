@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ZeRada</title>
+</head>
+<body>
+    
+        <div class="top">
+            <div><h1>Анонимный опрос!</h1></div>
+            <div><h2>Выборы президента Украины</h2></div>
+            <div><h3>Вы бы отдали свой голос за <span class="king">Владимира зеленского</span>на выборах если бы они состоялись в этом году?</h3></div>
+        </div>
+        <div class="bottom">
+            <div class="y">
+                <button id="btnY" class="btnY">Да!
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="n">
+                <button id="btnN" class="btnN" onclick="pryg_skok()">Нет!
+                    
+                </button>
+            </div>
+        </div>
+        <script language="JavaScript">
+            function pryg_skok()
+            {
+             document.getElementById("btnN").style.right=Math.random()*300+"px";
+             document.getElementById("btnN").style.bottom=Math.random()*500+"px";
+            }
+            </script>
+</body>
+</html>
